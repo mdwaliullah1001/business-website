@@ -1,0 +1,551 @@
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+    font-family:  'Arial', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* for heading global  */
+@media only screen and (max-width: 576px) {
+  .g_t{
+    font-size: 30px;
+  }
+}
+
+/* nav aria start here */
+
+.nav_icon{
+    border: 5px solid hsl(39, 96%, 49%);
+    padding: 0 5px;
+    border-radius: 5px;
+    border-bottom: 5px dashed blueviolet;
+}
+.myNav, .Drop{
+    background-color: rgba(0, 0, 0, 0.6)!important;
+}
+.myNavN a{
+    color: white !important;
+}
+.nav_style li{
+    border:1px solid transparent;
+    transition: .7s;
+    margin-right: 5px;
+}
+.nav_style li:hover{
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.nav_style li>a{
+    padding: 4px 0;
+    transition: .7s;
+}
+.nav_style li a:hover{
+    color: #467CFF !important;
+   
+}
+.Button{
+    padding: 2px 1rem ;
+    border:1px solid white;
+}
+.Button a{
+    color: white !important;
+}
+
+.Drop:hover{
+    background-color: black ;
+}
+
+.myNav ul li.activeme a{
+ 
+  border-radius: 3px !important;
+  color: #467CFF !important;
+}
+
+/* nav aria end here */
+
+
+/* ********* For background video in hero section start ************ */
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+ 
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: transparent no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+  .started_button{
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+    outline: none;
+    padding: 6px 12px;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    background-color:#467CFF;
+    transition: 0.6s;
+  }
+  .started_button:hover{
+    background-color: transparent;
+    border: 3px solid #467CFF;
+  }
+
+  .Button_group{
+    padding: 2px 12px;
+    border-radius: 30px;
+    margin-left: 5px;
+  }
+
+  /* ********* For background video end ************ */
+
+
+/* trasted clients start using slick */
+.slick-slide{
+  margin: 0 20px;
+}
+.slick-slide img{
+  width: 100%;
+}
+.slick-slider{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+.slick-list{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block
+}
+.slick-slide{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-slide img{
+  display: block;
+}
+.slick-initialized .slick-slide{
+  display: block;
+}
+
+
+.hr_style{
+  display: block;
+  width: 15%;
+  height: 2px;
+  margin: 0 auto;
+  background-color: slateblue;
+}
+
+/* trasted clients ended here */
+
+
+/* About section start */
+
+
+
+
+
+
+/* About section end */
+
+
+/* services section started  */
+.hr_rool::after{
+  content: '';
+  border: 1px dashed black;
+  display: block;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.fon{
+  font-size: 15px;
+}
+
+.box_s{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.7s;
+}
+
+.box_s:hover{
+  transform: translate(0, -15px);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.ico{
+  transition: 1s;
+}
+.box_s:hover .ico{
+  transform: rotateY(180deg);
+ 
+}
+/* services section ended  */
+
+
+
+/* carousel speed control */
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
+/* carousel client section */
+.client_testimonial{
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/business-m.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+}
+.client_testimonial img{
+  width: 6.5rem;
+  height: 6.5rem;
+  border: 4px solid white;
+  margin-bottom: .6rem;
+}
+.client_testimonial h4{
+  margin-bottom: 1rem;
+  color: aliceblue;
+}
+
+/* carousel client end here */
+
+
+
+/******************************
+contact us start
+******************************/
+
+#contact_us_container{
+  background-image: url('../img/backg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 6rem;
+}
+.containerc{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left_c_container h3{
+  color: #11af60;
+  text-transform: capitalize;
+}
+
+.contacT{
+  padding:10px;
+  display: flex;
+  align-items: center;
+}
+
+.contacT:hover .icon{
+  color: #fff;
+  background-color: rgb(51, 20, 189);
+  transition: .5s;
+}
+.contacT h3{
+  padding-bottom: 3px;
+  
+}
+
+.icon{
+  margin-right: 15px;
+  color:black;
+  background: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+/*********************
+contact form send massage 
+**************************/
+.right_c_container{
+  box-shadow: 1px 1px 10px black;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.right_c_container h2{
+  text-transform: capitalize;
+  color: darkcyan;
+  margin-bottom: 1rem;
+}
+.right_c_container h3{
+  text-transform: capitalize;
+  font-size: 15px;
+  color:rgb(7, 56, 59);
+}
+.right_c_container input{
+  outline: none;
+  background-color: transparent;
+  display: block;
+  width: 90%;
+  margin-bottom: 1rem;
+  padding: .3rem;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.texta{
+  width: 90%;
+  margin: .5rem 0;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgb(20, 212, 196);
+  padding: .5rem;
+}
+.conMap{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  outline: 4px solid white;
+  outline-offset: 5px;
+}
+/********************* CONTACT US SECTION ENDED**********************/
+
+
+
+
+/* ************ Filterable protfolio start ************** */
+
+
+
+
+
+.columnB {
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row_:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.contentA {
+  background-color: white;
+  padding: 10px;
+  overflow: hidden;
+  animation-name: filteranim;
+  animation-duration: 0.5s;
+}
+@keyframes filteranim{
+  from{
+    transform: scale(0.3);
+    opacity: 0.4;
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+.contentA img{
+  cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.contentA img:hover{
+  transform: scale(1.5);
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btnC {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+/* Add a grey background color on mouse-over */
+.btnC:hover {
+  background-color:rgb(194, 194, 194);
+}
+
+/* Add a dark background color to the active button */
+.btnC.activeA {
+  background-color: #007BFF;
+   color: white;
+}
+/* ************ Filterable portfolio end ************** */
+
+
+
+
+/* footer section start here */
+.contact_ p{
+  font-size: 12px;
+}
+.mt_0{
+  margin-top: -15px;
+}
+.navBa li a{
+  color: white;
+  text-decoration: none;
+}
+.navBa li:hover a{
+  color: #0069D9;
+}
+.navBa li{
+  list-style-type: none;
+}
+.hst{
+  height: 2px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  margin:30px 0;
+}
+.footer_icon i{
+  color: #0069D9;
+  margin: 0 7px;
+  cursor: pointer;
+}
+
+/* footer section end here */
+
+
+
+
+
+
+/* back to top button */
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #007BFF;;
+  cursor: pointer;
+  outline: none;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+  background-color: #fff;
+  color: #007BFF;
+  border: 2px solid #007BFF;  
+}
+
+
+/* Animations */
+.btnEntrance {
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+
+/* fadeInUp */
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;  
+  animation-name: btnExit;
+}
+
+/* fadeOutDown */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+/* back top top end */
+
+
+/*end css file */
